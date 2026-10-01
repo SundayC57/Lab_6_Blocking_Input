@@ -28,7 +28,6 @@ public class CtoFConverter {
                 IO.println("Try again!");
             }
 
-
         } while(!done);
 
 
