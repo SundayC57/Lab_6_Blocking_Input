@@ -25,7 +25,7 @@ public class RectangleInfo {
             else
             {
                 trash = in.nextLine();
-                IO.print("You entered an invalid input: " + trash + " input must be a number");
+                IO.println("You entered an invalid input: " + trash + " input must be a number");
                 IO.println("Please try again");
             }
         }while(!done);
@@ -34,16 +34,17 @@ public class RectangleInfo {
 
         do {
             IO.print("Enter the width of the rectangle: ");
-            if(in.hasNextDouble())
-            {
-                width = in.nextDouble();
-                done = true;
-            }
-            else
+
+                if(in.hasNextDouble())
                 {
-                trash = in.nextLine();
-                IO.print("You entered an invalid input: " + trash + " input must be a number");
-                IO.println("Please try again");
+                    width = in.nextDouble();
+                    done = true;
+                }
+                else
+                {
+                    trash = in.nextLine();
+                    IO.println("You entered an invalid input: " + trash + " input must be a number");
+                    IO.println("Please try again");
                 }
 
         }while(!done);
